@@ -1,4 +1,4 @@
-:root{
+/* :root{
   --sidebar-bg-color:#1a2038,
   --txt-color:#000814,
 }
@@ -13,41 +13,8 @@
   top: 0;
   
   
+} */
+.sidebar-text {
+  padding: 1px 5px;
+  background-color: red;
 }
-
-.sidebar-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0px 8px 0px;
-    list-style: none;
-    height: 60px;
-}
-
-
-.sidebar-text a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding: 0 16px; */
-    border-radius: 4px;
-  }
- 
-.sidebar-text a:hover {
-    background-color:#646f9e ;
-  }
-  
-.sidebar-menu-items {
-    width: 80%;
-    position: relative;
-    top: 50px;
-  }
-span {
-    margin-left: 12px;
-  }  
-  
