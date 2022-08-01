@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as GrIcons from "react-icons/gr";
+// import * as AiIcons from "react-icons/ai";
 
 
  export const SidebarData = [
@@ -21,7 +22,7 @@ import * as GrIcons from "react-icons/gr";
     {
       title: 'Notes',
       path: '/notes',
-      icon: <GrIcons.GrNotes />,
+      icon: <AiIcons.AiFillFile />,
       cName: 'sidebar-text'
     }
    
