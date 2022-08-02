@@ -2,6 +2,7 @@ import React, {useState}from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import SearchBar from '../components/SearchBar';
+import VideoPlayer from '../components/VideoPlayer';
 
 // function SearchBar({ placeholder, data }) {
 //   const [filteredData, setFilteredData] = useState([]);
@@ -66,6 +67,8 @@ function Home() {
         <Navbar />
         <Sidebar />
         <SearchBar placeholder="Quick Search..."/>
+        <VideoPlayer />
+
 
 
     </>
