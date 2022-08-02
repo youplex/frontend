@@ -65,7 +65,7 @@ function Home() {
     <>  
         <Navbar />
         <Sidebar />
-        <SearchBar />
+        <SearchBar placeholder="Quick Search..."/>
 
 
     </>
