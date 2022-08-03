@@ -38,7 +38,7 @@ function Sidebar() {
             {SidebarData.map((item,index)=>{
                 return(
                     
-                    <li key={index} className=' h-max w-max p-3 hover:bg-white mt-5  rounded-full '  >
+                    <li key={index} className=' h-max w-max p-3 hover:bg-white hover:text-blue-700 mt-5  rounded-full '  >
                         <Link  className='' to={item.path}>
                             {item.icon}
                            
