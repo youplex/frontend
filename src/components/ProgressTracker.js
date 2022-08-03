@@ -37,7 +37,7 @@ function ProgressTracker() {
                         {item.title}
                     </Typography>
 
-                    <div className='w-80 h-0.5 bg-slate-600'>
+                    <div className='w-80 h-0.5 bg-slate-700'>
                         <div className={`w-${Math.floor((item.percentage)/8)} h-full bg-progress`}></div>
                     </div>
                     </div>
