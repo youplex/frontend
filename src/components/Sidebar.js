@@ -38,7 +38,7 @@ function Sidebar() {
             {SidebarData.map((item,index)=>{
                 return(
                     
-                    <li key={index} className=' h-max w-max p-3 bg-red-500 mt-5  rounded-full '  >
+                    <li key={index} className=' h-max w-max p-3 hover:bg-white mt-5  rounded-full '  >
                         <Link  className='' to={item.path}>
                             {item.icon}
                            
@@ -53,10 +53,10 @@ function Sidebar() {
         
         {/* logout button */}
         
-            <Link className='flex justify-start items-center p-1  ' to='#'>
+            <Link className='flex  h-max w-max p-3 hover:bg-white rounded-full justify-start items-center p-3  ' to='#'>
 
-                <AiIcons.AiOutlineLogout />
-                <span className='pl-0.5 ' style={{color:'white'}}></span>
+                <AiIcons.AiOutlinePlusSquare />
+                
             </Link>
             
 

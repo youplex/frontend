@@ -25,7 +25,7 @@ function Btn({date,sort}) {
 function ProgressTracker() {
   return (
     <>
-    <div className='ml-52 my-5 text-xl text-bold'>ProgressTracker</div>
+    <div className='ml-52 my-5 text-xl font-medium'>Progress Tracker</div>
         <div className='ml-52 '>
         <Card style={{backgroundColor: "#F6F7FF"}} sx={{width:1000}}>
                 <CardContent>

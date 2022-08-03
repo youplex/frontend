@@ -17,19 +17,25 @@ import * as BsIcons from "react-icons/bs";
     {
       title: 'Home',
       path: '/',
-      icon: <AiIcons.AiFillHome />,
+      icon: <AiIcons.AiOutlineHome />,
+      cName: 'sidebar-text'
+    },
+    {
+      title: 'Search',
+      path: '/',
+      icon: <AiIcons.AiOutlineSearch />,
       cName: 'sidebar-text'
     },
     {
       title: 'View Schedule',
       path: '/schedule',
-      icon: <FaIcons.FaCalendar />,
+      icon: <AiIcons.AiOutlineCalendar />,
       cName: 'sidebar-text'
     },
     {
       title: 'Notes',
       path: '/notes',
-      icon: <AiIcons.AiFillFile />,
+      icon: <AiIcons.AiOutlineFile />,
       cName: 'sidebar-text'
     }
    

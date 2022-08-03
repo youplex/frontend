@@ -43,7 +43,7 @@ const styles={
   return (
     <>
     
-    <div className='ml-52 my-5 text-xl text-bold'>{header}</div>
+    <div className='ml-52 my-5 text-xl font-medium'>{header}</div>
       <div className='ml-52 w-4/5 h-min grid grid-cols-2 gap-2 mb-4 '>
           
           {PlaylistData.map((item,index)=>{
