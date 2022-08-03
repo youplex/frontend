@@ -22,7 +22,7 @@ function Sidebar() {
 
 
     <IconContext.Provider value={{color:'#fff'}}>
-    <nav className='sidebar-menu fixed top-0 left-0 right-0 flex flex-col h-screen w-32 justify-between items-center py-5  bg-sidebar '>
+    <nav className='sidebar-menu fixed top-0 left-0 right-0 flex flex-col h-screen w-32 justify-between items-center py-5  bg-primary '>
         <ul className='sidebar-menu-items space-y-0'>
 
         {/* <li>
@@ -38,7 +38,7 @@ function Sidebar() {
             {SidebarData.map((item,index)=>{
                 return(
                     
-                    <li key={index} className=' h-max w-max p-6 bg-red-500' style={{borderRadius:'50%'}} >
+                    <li key={index} className=' h-max w-max p-3 bg-red-500 my-1 ' style={{borderRadius:'50%'}} >
                         <Link className='' to={item.path}>
                             {item.icon}
                            
