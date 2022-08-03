@@ -8,11 +8,14 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import img1 from '../assets/img1.jpg';
-import img2 from '../assets/img2.jpg';
-import img3 from '../assets/img3.jpg';
-import img4 from '../assets/img4.jpg';
+// import img1 from '../assets/img1.jpg';
+// import img2 from '../assets/img2.jpg';
+// import img3 from '../assets/img3.jpg';
+// import img4 from '../assets/img4.jpg';
 import { PlaylistData } from './PlaylistData';
+import Sidebar from './Sidebar';
+import {Link} from 'react-router-dom';
+
 
 
 
@@ -25,36 +28,46 @@ import { PlaylistData } from './PlaylistData';
 //   </Box>
 // );
 
- function Playlist() {
+ function Playlist({header}) {
   return (
-    <div className='ml-52 w-4/5 h-min grid grid-cols-2 gap-4 bg-sidebar'>
-        {PlaylistData.map((item,index)=>{
-            return (
-
-                <Card sx={{maxWidth:350}} >
-                
-                <CardMedia
-                    
-                    component="img"
-                    
-                    image={item.img}
-                    alt="Paella dish"
-                />
-                {/* <CardContent>
-                    <Typography variant="body2" color="text.secondary">
-                        Hello
-                    </Typography>
-                </CardContent> */}
-                <span>{item.title}</span>
-                
-                </Card>
-               
-            )
-        })}
+    <>
+    
+    <div className='ml-52 my-5 text-xl text-bold'>{header}</div>
+      <div className='ml-52 w-4/5 h-min grid grid-cols-2 gap-2 mb-4 '>
           
-    </div>
-  );
-}
+          {PlaylistData.map((item,index)=>{
+            
+              return (
+                <Link to='#'>
+
+                  <Card sx={{width:400}} >
+                  
+                  <CardMedia
+                      
+                      component="img"
+                      
+                      image={item.img}
+                      alt={item.title}
+                  />
+                  <CardContent>
+                      <Typography variant="body1" color="text.secondary">
+                      <span className='flex justify-center'>{item.title}</span>
+                      </Typography>
+                  </CardContent>
+                 
+                  
+                  </Card>
+                </Link>
+
+                  
+                 
+              )
+          })}
+            
+      </div>
+    
+   </>
+)}
 
 
 // const Playlist = () => {

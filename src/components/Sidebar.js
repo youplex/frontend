@@ -22,35 +22,41 @@ function Sidebar() {
 
 
     <IconContext.Provider value={{color:'#fff'}}>
-    <nav className='sidebar-menu fixed top-0 left-0 right-0 flex flex-col h-screen w-36 justify-between items-center py-5  bg-sidebar '>
+    <nav className='sidebar-menu fixed top-0 left-0 right-0 flex flex-col h-screen w-32 justify-between items-center py-5  bg-sidebar '>
+        <ul className='sidebar-menu-items space-y-0'>
 
-        <Link className='text-white-100 relative top-5' to='#'>
-            <BsIcons.BsFillLightningChargeFill />
+        {/* <li>
+            <Link className='text-white-100 relative top-5' to='#'>
+                <BsIcons.BsFillLightningChargeFill />
 
-        </Link>
+            </Link>
 
+        </li> */}
         {/* sidebar items */}
-        <ul className='sidebar-menu-items space-y-8 '>
-            
-        {SidebarData.map((item,index)=>{
-            return(
-                <li key={index} className=' h-max w-max p-2 bg-red-500' style={{borderRadius:'50%'}} >
-                    <Link className='' to={item.path}>
-                        {item.icon}
-                        {/* <span>{item.title}</span> */}
-                    </Link>
-                </li>
-            )
-        })}
+        
 
-        </ul>
+            {SidebarData.map((item,index)=>{
+                return(
+                    
+                    <li key={index} className=' h-max w-max p-6 bg-red-500' style={{borderRadius:'50%'}} >
+                        <Link className='' to={item.path}>
+                            {item.icon}
+                           
+                        </Link>
+                    </li>
+                )
+            })}
+        
+            
+
+    </ul>
         
         {/* logout button */}
         
             <Link className='flex justify-start items-center p-1  ' to='#'>
 
                 <AiIcons.AiOutlineLogout />
-                <span className='pl-0.5 ' style={{color:'white'}}>Logout</span>
+                <span className='pl-0.5 ' style={{color:'white'}}></span>
             </Link>
             
 

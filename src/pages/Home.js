@@ -9,11 +9,13 @@ import Playlist from '../components/Playlist';
 function Home() {
   return (
     <>  
-        <Navbar />
+        <Navbar page='Your Playlists' />
         <Sidebar />
-        <SearchBar placeholder="Quick Search..."/>
+        
+        {/* <SearchBar placeholder="Quick Search..."/> */}
         {/* <VideoPlayer /> */}
-        <Playlist />
+        <Playlist header='Most Played' />
+        <Playlist header='All Playlists'/>
 
 
 

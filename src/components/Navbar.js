@@ -11,11 +11,12 @@ import * as BiIcons from "react-icons/bi";
 
 import { IconContext } from 'react-icons';
 
-function Navbar() {
+function Navbar({page}) {
+    
   return (
   
-        <div className=' flex justify-between  ml-52  py-10 h-16 w-4/5  '>
-            <h1 className='uppercase'>Youplex</h1>
+        <div className=' flex justify-between  ml-52   py-10 h-16 w-4/5  '>
+            <h1 className='text-bold text-3xl'>{page}</h1>
             <div className='flex list-none px-2'>
                 <li className='px-2'>
                     <Link to='#'>

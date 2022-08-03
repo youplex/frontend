@@ -8,22 +8,13 @@ export const PlaylistData=[
     {
         id:1,
         img:img1,
-        title:'StarWars full cast group photo oil painting'
+        title:'Crework BWU'
     },
 
     {
         id:2,
         img:img2,
-        title:'StarWars full cast group photo oil painting'
+        title:'Crework BWU'
     },
-    {
-        id:3,
-        img:img3,
-        title:'StarWars full cast group photo oil painting'
-    },
-    {
-        id:4,
-        img:img4,
-        title:'StarWars full cast group photo oil painting'
-    }
+
 ]
